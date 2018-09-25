@@ -7,3 +7,8 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
+test('has an API key', () => {
+  expect(API_KEY).toBeDefined();
+})
